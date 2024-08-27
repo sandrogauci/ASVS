@@ -37,7 +37,7 @@ Media security is paramount in WebRTC applications, as it directly impacts the c
 
 These requirements only apply to systems that host their own WebRTC media servers, such as Selective Forwarding Units (SFUs), Multipoint Control Units (MCUs), recording servers, or gateway servers. These servers are responsible for handling, routing, processing, or storing media streams within the application. The security of these media servers is crucial because they manage and distribute media between peers, and improper security could lead to unauthorized access, interception, or manipulation of media streams. 
 
-In particular, it will be necessary to implement protections against flood attacks such as rate limiting, validating timestamps, using synchronized clocks to match real-time intervals, and managing buffers to prevent overflow and maintain proper timing. If packets for a particular media session arrive too quickly, excess packets should be dropped. It is also important to protect the system from malformed packets and messages by implementing input validation, safely handling integer overflows, preventing buffer overflows, and employing other robust error-handling techniques.
+In particular, it will be necessary to implement protections against flood attacks such as rate limiting, validating timestamps, using synchronized clocks to match real-time intervals, and managing buffers to prevent overflow and maintain proper timing. If packets for a particular media session arrive too quickly, excess packets should be dropped. It is also important to protect the system from malformed packets by implementing input validation, safely handling integer overflows, preventing buffer overflows, and employing other robust error-handling techniques.
 
 Systems that rely solely on peer-to-peer media communication between web browsers, without the involvement of intermediate media servers, are excluded from these specific media-related security requirements. However, such systems should still adhere to the other requirements outlined in this chapter to ensure the overall security of their communications. 
 
@@ -53,7 +53,7 @@ Systems that rely solely on peer-to-peer media communication between web browser
 
 ## V53.3 Signalling
 
-Signalling is a critical component of WebRTC applications, responsible for coordinating communication sessions between peers. The security of the signalling process is essential to prevent unauthorized access, eavesdropping, and service disruptions. This includes protection from malformed signaling messages as discussed in the previous section.
+Signalling is a critical component of WebRTC applications, responsible for coordinating communication sessions between peers. The security of the signalling process is essential to prevent unauthorized access, eavesdropping, and service disruptions. This protecting the system fralfo by implementing input validation, safely handling integer overflows, preventing buffer overflows, and employing other robust error-handling techniques.
 
 These requirements only apply to systems that host signalling servers as part of their WebRTC infrastructure.
 
